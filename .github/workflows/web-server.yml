@@ -6,9 +6,9 @@ metadata:
     app: web-server
 spec:
   containers:
-  -  name: nginx
+  - name: nginx
     image: nginx:latest
     ports:
-    -  containerport: 80
+    - containerport: 80
   imagePullSecrets:
   - name: yjw-secret
