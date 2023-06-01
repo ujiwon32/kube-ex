@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: was
+  labels:
+    app: php-fpm
+spec:
+  containers:
+  - name: php-fpm
+    image: bitnami/php-fpm
+  imagePullSecrets:
+  - name: yjw-secret-test
